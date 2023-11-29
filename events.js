@@ -1,25 +1,22 @@
-oldSchool = () => {
-  document.getElementById("htmlEH").innerHTML =
-    "This is bad practice. Don't use this one.";
-}
+oldSchool = () =>
+  (document.getElementById("htmlEH").innerHTML =
+    "This is bad practice. Don't use this one.");
 
-tradText = () => {
-  document.getElementById("traditional").innerHTML =
-    "You can only attach one function to this event.";
-}
+tradText = () =>
+  (document.getElementById("traditional").innerHTML =
+    "You can only attach one function to this event.");
 
 const tradHandler = document.getElementsByTagName("input")[1];
 
 tradHandler.onclick = tradText;
 
-level2Text = () => {
-  document.getElementById("level2").innerHTML =
-    "Use this. You can attach multiple functions to an event.";
-}
+level2Text = () =>
+  (document.getElementById("level2").innerHTML =
+    "Use this. You can attach multiple functions to an event.");
 
 alertMe = () => {
   alert("This is part of the level 2 functionality.");
-}
+};
 
 var level2Btn = document.getElementsByTagName("input")[2];
 
@@ -53,18 +50,15 @@ keyInput.addEventListener("keydown", countKey);
 //Mouse Events
 let dangerTxt = document.getElementById("danger");
 
-changeDanger = () => {
-  dangerTxt.innerHTML = "<b>You changed the text. Way to go!</b>";
-};
+changeDanger = () =>
+  (dangerTxt.innerHTML = "<b>You changed the text. Way to go!</b>");
 
 dangerTxt.addEventListener("dblclick", changeDanger);
 
 //Focus Event
 let blurText = document.getElementsByClassName("blurText")[0];
 
-change2Upper = () => {
-  blurText.style.textTransform = "uppercase";
-};
+change2Upper = () => (blurText.style.textTransform = "uppercase");
 
 blurText.addEventListener("blur", change2Upper);
 
